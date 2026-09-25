@@ -11,7 +11,7 @@ COPY settings.gradle.kts .
 
 RUN chmod +x gradlew
 
-# Baixa dependências
+# Baixa dependência
 RUN ./gradlew dependencies --no-daemon || true
 
 # Copia o restante do projeto
