@@ -3,7 +3,7 @@ FROM eclipse-temurin:21-jdk AS build
 
 WORKDIR /app
 
-# Copia arquivos do Gradle primeiro para aproveitar cache
+# Copia arquivos do Gradle primeiro para aproveitar cach
 COPY gradlew .
 COPY gradle gradle
 COPY build.gradle.kts .
